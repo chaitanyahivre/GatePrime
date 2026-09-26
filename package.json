@@ -1,14 +1,18 @@
 {
-  "name": "gate-2029-dashboard",
+  "name": "gateprime",
   "private": true,
   "version": "0.1.0",
   "type": "module",
+   
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vite",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "vite": "^7.2.2"
   }
 }
